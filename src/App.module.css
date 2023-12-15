@@ -1,0 +1,96 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.7rem;
+}
+
+.inputContainer form input:first-of-type{
+    padding: 16px;
+    height: auto;
+    width: 39.875rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    margin-right: 1rem;
+    display: inline-flex;
+}
+
+.inputContainer form input:first-of-type:focus{
+    outline: 1px solid var(--purple-500);
+}
+
+.inputContainer form button:first-of-type{
+    background-color: var(--blue-500);
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    height: auto;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.inputContainer form button:first-of-type:hover{
+    background-color: var(--blue-300);
+}
+
+.tasksContainer{
+    margin-top: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasksCounters{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.tasksCounters div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+.titleCounter{
+    font-weight: bold;
+    color: var(--blue-300);
+}
+
+.titleCounter2{
+    font-weight: bold;
+    color: var(--purple-300);
+}
+
+.numberCounter{
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.allTasks{
+    margin-top: 2rem;
+}

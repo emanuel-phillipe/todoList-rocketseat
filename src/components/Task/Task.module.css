@@ -1,0 +1,76 @@
+.task{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    background: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    align-self: stretch;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.paragraphForTaskDone{
+    text-decoration-line: line-through;
+    color: var(--gray-300);
+}
+
+.task p{
+    line-height: 1.4;
+    font-size: 0.875rem;
+}
+
+.paragraphForTaskNotDone{
+    color: var(--gray-100);
+    text-decoration-line: none;
+}
+
+
+
+.trashIcon{
+    cursor: pointer;
+    transition: all 0.1s;
+    background: transparent;
+    border: none;
+    color: var(--gray-300);
+    border-radius: 2px;
+    display: flex;
+}
+
+.toggleTask{
+    cursor: pointer;
+    transition: all 0.1s;
+    border: none;
+    border-radius: 2222px;
+    display: flex;
+    background: transparent;
+}
+
+.trashIcon:hover{
+    color: var(--red-500);
+}
+
+.circleFilledForTaskDone{
+    border-radius: 2222px;
+    color: var(--purple-500);
+    transition: all 0.1s;
+}
+
+.circleFilledForTaskNotDone{
+    border-radius: 2222px;
+    background: transparent;
+    color: var(--blue-300);
+}
+
+.circleFilledForTaskNotDone:hover{
+    opacity: 0.4;
+    background: transparent;
+    background-color: var(--blue-500);
+}
+
+.circleFilledForTaskDone:hover{
+    color: var(--purple-300);
+}
